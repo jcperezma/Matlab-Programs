@@ -1,4 +1,4 @@
-
+% computes the 2D orientation tensor of a simulation
 folder_name = uigetdir; % select the folder that contains the output folder
 numFramesFileName=[folder_name '\output\nbr_frames.txt'];
 positionsFileName=[folder_name '\output\positions.out'];

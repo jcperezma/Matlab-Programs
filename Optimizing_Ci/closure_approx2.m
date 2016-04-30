@@ -1,4 +1,6 @@
 function [a4] = closure_approx2(a,closure_approx_kind)
+% computes the closure approximations found on Tucker and Advani's paper
+
 ndim=size(a,1);
 delta=eye(ndim);
 
@@ -57,12 +59,24 @@ switch closure_approx_kind
             end
        end
        coeff(7)=-2/coeff(7);
-    case(7);
+    case(7)
        coeff(1)=-(1-f)/35;
        coeff(2)=-(1-f)/35;
        coeff(3)=(1-f)/7;
        coeff(4)=(1-f)/7;
        coeff(5)=f;
+    case(8)
+       a4  = ORF( a );
+       return
+    case(9)
+       a4  = ORE( a );
+       return
+    case(10)
+       a4  = ORW( a );
+       return
+    case(11)
+       a4  = ORW3( a );
+       return
 end
 
 a4=zeros(3,3,3,3);

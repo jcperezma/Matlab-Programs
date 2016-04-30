@@ -12,9 +12,16 @@ function [ a2, a2_in_time, strain ] = ComputeRSC_Evolution( a2, omega, gamma_dot
 %                  Folgar-Tucker original model
 %   closureType :  Closure approximation used to approximate the 4th rank
 %                  orientation tensor. Based on Tucker and Advani (1999)
-%                  1- Isotropic, 2-Linear, 3-Quadratic, 4-Strong flow, 
-%                  5-Composite1(Hinch & Leal), 6-Composite2(Hinch & Leal),
+%                  1-Isotropic, 
+%                  2-Linear, 
+%                  3-Quadratic, 
+%                  4-Strong flow, 
+%                  5-Composite1(Hinch & Leal), 
+%                  6-Composite2(Hinch & Leal),
 %                  7-Hybrid.
+%                  8-ORF.
+%                  9-ORE
+%                  10-ORW
 %   out
 %   a2           :  The final orientation tensor
 %   a2_in_time   :  the history of a2 

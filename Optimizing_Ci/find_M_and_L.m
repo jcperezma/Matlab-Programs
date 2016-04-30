@@ -1,5 +1,5 @@
 function [ M , L ] = find_M_and_L( a2, n_dim )
-%UNTITLED2 Returns the fourth-ordered tensors M and L
+%find_M_and_L Returns the fourth-ordered tensors M and L
 %   Detailed explanation goes here
    %p - numbers of eigenvalues
 %~~~~~~~~~~~~Delete this later~~~~~~~~~~~~~~~~%
