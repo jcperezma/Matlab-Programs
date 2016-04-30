@@ -1,0 +1,24 @@
+&input
+recover_simulation=0
+fric_coeff=0           !       Friction Coefficient
+is_fric_wall = .false.	  ! turns on or off wall friction
+E_Young=2.6E9               ![Pa]   
+allow_breakage =.false.	  ! turns or or off fiber breakage
+r_fiber = 0.203E-3         ![m]    Fiber radius
+viscosity=12          
+ex_vol_const=30       ![N]    Excluded volume 
+nbr_neighbors=30          ![-]    Number of neighbors
+gamma_dot = 84            ![1/s] shear rate 
+epsilon_dot=-0.01         ![1/s]  Extensional rate  
+flow_case = 1			  ! 1 : shear flow
+periodic_boundary = .true. ! 
+box_size(1) = 9.54e-3         ![m] 
+box_size(2) = 9.54e-3         ![m] 
+box_size(3) = 3.54e-3         ![m] 
+dt=1e-6                   ![s]    Time step
+nbr_intgr= 500000         ![-]    Number of time steps
+writ_period=1000           ![-]    File writing period
+break_period=100		!
+printVelocities=.false.   !
+distancefactor=3
+/       		

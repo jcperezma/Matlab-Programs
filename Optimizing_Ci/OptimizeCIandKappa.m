@@ -11,6 +11,7 @@ folder_name = uigetdir; % select the folder that contains the output folder
 numFramesFileName=[folder_name '\output\nbr_frames.txt'];
 positionsFileName=[folder_name '\output\positions.out'];
 % the data below was pulled from Fibers.in
+
 dt = 1e-5;
 shear_rate = 10;
 write_freq = 2000;
@@ -27,7 +28,7 @@ epsilon_dot=+1; %Elongational rate
 delta_time=0.1;
 totalStrain=max(totalDeformation_mech*1.1);
 ndim=3;
-minDeformation = 50;
+minDeformation = totalDeformation_mech/2;
 maxDeformation = 800;
 if ndim == 3
 a_ij_calc_indices = [1 2 3 5 6 9]; 
@@ -42,7 +43,7 @@ Ci=0.1;
 flow_type=1;
 lambda=1;%(1-re^2)/(1+re^2)
 kappa=1;
-closureType = 7;
+closureType = 9;
 % 3D Random initial orientation
 a2=zeros(ndim,ndim);
 
