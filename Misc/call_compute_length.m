@@ -5,7 +5,7 @@ positionsFileName=[folder_name '\output\positions.out'];
 
 % get this from the fibers.in file. 
 dt = 1e-5;
-write_freq =2000;
+write_freq =50000;
 
 % define the minimum and maximum length in the simulation
 minL = 0.25;
