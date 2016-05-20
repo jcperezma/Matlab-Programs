@@ -79,3 +79,5 @@ for frame= 1 : numFrames
     
 end
 
+fclose(numFramesFile);
+fclose(positionsFile);
