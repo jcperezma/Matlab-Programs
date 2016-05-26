@@ -25,7 +25,7 @@ Phelps' Breakage model
 --------------------
 Function that implements the breakage model from Phelps
 
-- Durin's Breakage model
+Durin's Breakage model
 --------------------
 Function that implements the breakage model from Durin
 
