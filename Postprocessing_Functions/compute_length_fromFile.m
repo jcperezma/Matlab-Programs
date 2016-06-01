@@ -8,7 +8,7 @@ numBins = (maxL-minL)/minL;
 lengths = minL:(maxL-minL)/numBins :maxL;
 
 time = (1:numFrames)*dt*write_freq;
-dist_hist =zeros(numFrames,lengths(lengths));
+dist_hist =zeros(numFrames,length(lengths));
 Ln = zeros(1,numFrames);
 Lw = zeros(1,numFrames);
 for frame= 1 : numFrames
@@ -18,7 +18,7 @@ for frame= 1 : numFrames
     for  fiber = 1: numFibers
         % read number of hinges
         numHinges=fscanf(positionsFile,'%g',1);
-        length =0;
+        length_ =0;
         %load x1, y1, z1
         pts(1:3)=fscanf(positionsFile,'%g',3);
         x1 = pts(1); %
@@ -41,7 +41,7 @@ for frame= 1 : numFrames
             
             % find segment length and add it to the fiber length
             
-            length = length + sqrt(p1*p1+p2*p2+p3*p3);
+            length_ = length_ + sqrt(p1*p1+p2*p2+p3*p3);
             
             % normalize components
                       
@@ -53,7 +53,7 @@ for frame= 1 : numFrames
             %
         end
         
-        binIndex = floor( (length -minL/2)/minL   ) +1;
+        binIndex = floor( (length_ -minL/2)/minL   ) +1;
         
         dist_hist(frame, binIndex) = dist(frame, binIndex) +1;
     
