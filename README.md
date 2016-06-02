@@ -15,7 +15,7 @@ This repo contains:
 
 [Optimize Ci and Kappa](Optimizing_Ci)
 --------------------
-The functions in this folder fit the RSC model to the results obtained with the simulation. the main file is **OptimizeCIandKappa.m** 
+The functions in this folder fit the RSC model to the results obtained with the simulation. The main file is **OptimizeCIandKappa.m** 
 
 [RSC model](RSC model)
 --------------------
