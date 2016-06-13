@@ -1,8 +1,8 @@
 function [a_ij, totalDeformation ] =  compute_a_ij_fromFile(numFramesFileName, positionsFileName, dt, shear_rate, write_freq  )
 % this I will leave as manual inputs.
 
-numFramesFile=fopen(numFramesFileName)
-positionsFile=fopen(positionsFileName)
+numFramesFile=fopen(numFramesFileName);
+positionsFile=fopen(positionsFileName);
 %read number of frames
 numFrames=fscanf(numFramesFile,'%g',1);
 

@@ -47,7 +47,7 @@ k=1;
     
 for it=2:n_time_steps
     
-    t(it,1)=it*delta_time;
+    t(it,1)=(it-1)*delta_time;
     
     % Compute the 4th order tensor a4, L and M
     [a4] = closure_approx2(a2,closureType);
